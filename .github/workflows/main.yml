@@ -22,7 +22,7 @@ jobs:
     - name: serverless deploy
       uses: serverless/github-action@v3.2
       with:
-        args: -c "CREDS=`aws sts assume-role --role-arn arn:aws:iam::975049976491:role/learning_platform_role --role-session-name=gha_deployer` && export AWS_ACCESS_KEY_ID=`echo $CREDS | jq -r '.Credentials.AccessKeyId'` && export AWS_SECRET_ACCESS_KEY=`echo $CREDS | jq -r '.Credentials.SecretAccessKey'` && export AWS_SESSION_TOKEN=`echo $CREDS | jq -r '.Credentials.SessionToken'` && serverless deploy"
+        args: -c "serverless deploy"
         entrypoint: /bin/sh
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

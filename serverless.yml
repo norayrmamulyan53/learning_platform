@@ -5,6 +5,8 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: python3.9
+  iam:
+    deploymentRole: "arn:aws:iam::975049976491:role/learning_platform_role"
 
 
 functions:
