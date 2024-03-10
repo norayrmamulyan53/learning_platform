@@ -5,9 +5,42 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: python3.9
-  iam:
-    deploymentRole: "arn:aws:iam::975049976491:role/learning_platform_role"
-
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - "iam:AttachRolePolicy"
+        - "iam:DetachRolePolicy"
+        - "iam:PutRolePolicy"
+        - "iam:CreateRole"
+        - "iam:DeleteRole"
+        - "iam:GetRole"
+        - "iam:PassRole"
+        - "iam:UpdateAssumeRolePolicy"
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - "apigateway:Invoke"
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - "apigateway:POST"
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - "s3:*"
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - "cloudformation:*"
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - "lambda:*"
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - "logs:*"
+      Resource: "*"
 
 functions:
   hello:
