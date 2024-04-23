@@ -109,7 +109,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 my-2">
-                    <h4 class="mt-4">All Trending Courses</h4>
+                    <h4 class="mt-4">Բոլոր Պահանջված Դասընթացները</h4>
                 </div>
             </div>
             <div class="row">
@@ -118,7 +118,7 @@
                 <ul>
                     {% for i in latest_catg %}
                     {% if i.children.all %}
-                    <a href="{% url 'catpost' i.slug %}"><li class="btn btn-light"> {{i.title|title}} </li></a>                    
+                    <a href="{% url 'catpost' i.slug %}"><li class="btn btn-light"> {{i.title|title}} </li></a>
                     {% endif %}
                     {% endfor %}
                 </ul>
@@ -144,16 +144,16 @@
                   {% if i.children.all %}
                     <a href="{% url 'catpost' i.slug %}"><li class="main-class">{{i.title}}</li></a>
                     {% endif %}
-                  {% endfor %}  
+                  {% endfor %}
                   </ul>
                 </div>
               </div>
             </div>
           </div>
             </div>
-            
+
             <div class="portfolio-item row">
-            {% for i in cat_post %}            
+            {% for i in cat_post %}
               <div class="item col-lg-3 col-md-4 mt-4">
                     <a href="{% url 'details' i.slug i.slug %}" style="color: black;">
                         <div class="main-hover-div">
@@ -191,7 +191,7 @@
                             </div>
                         </div>
                     </a>
-              </div>            
+              </div>
             {% endfor %}
             {% for i  in totalposts %}
                 <div class="item col-lg-3 col-md-4 mt-4">
@@ -232,11 +232,11 @@
                         </div>
                     </a>
                 </div>
-            {% endfor %}    
+            {% endfor %}
             </div>
             <div class="button-setion text-center mt-4 mb-4">
-                <a href="{% url 'all-courses' %}" class="btn btn-primary">Browse all courses</a>
-                <p>Explore our wide range of courses</p>
+                <a href="{% url 'all-courses' %}" class="btn btn-primary">Տեսնել բոլոր դասընթացները</a>
+                <p>Բացահայտեք մեր դասընթացների լայն տեսականին</p>
             </div>
         </div>
     </section>
@@ -353,7 +353,7 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <span class="more_button_cat">View More 
+                <span class="more_button_cat">Ավելին
       <i class="fa fa-angle-right" aria-hidden="true"></i>
     </span>
             </div>
@@ -410,7 +410,7 @@
                 </div>
                 {% endfor %}
             </div>
-            <span class="more_button_cat">VIEW ALL REVIEWS 
+            <span class="more_button_cat">Օգտագործողների գնահատականներ
       <i class="fa fa-angle-right" aria-hidden="true"></i>
     </span>
         </div>
@@ -586,53 +586,6 @@
 
     <!----CATEGORIES--- -->
 
-    <!----Drop-box-section----->
-    <section class="Drop-box-section">
-        <div class="drop_box_enqr hidden-xs redShow" style="display: block;">
-            <div class="head dp_hd_bx duq-new-head totop" style="cursor: pointer;">
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-                            <span class="title" style="margin-left: -60px; font-size: 16px; ">Drop us a Query</span>
-                            <span class="accicon"><i class="fas fa-angle-down rotate-icon" style="margin-left: 78px; font-size: 20px;"></i></span>
-                        </div>
-                        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <div class="mlp_talk_adverbox">
-                                    <div class="title_num">
-
-                                        <div class="num_box_adv mt-2">
-                                            <img src="images/telephone-symbol-button.png">
-                                            <div class="num_box_sub">
-                                                <p c>08068245835</p>
-                                                <p class="sub">Available 24x7 for your queries</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form_talk">
-                                        <form>
-                                            <div class="mb-3 mt-2">
-                                                <input type="Number" class="form-control" id="Number" name="Phone" placeholder="Mobile No*">
-                                            </div>
-                                            <div class="mb-3">
-                                                <input type="email" class="form-control" id="Email" placeholder="e.g. sara@gmail.com*">
-                                            </div>
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your query here*"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">SUBMIT QUERY</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -767,7 +720,6 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
-    <script>(function(w, d) { w.CollectId = "5fe44103af5280769a544460"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
 </body>
 
 </html>
