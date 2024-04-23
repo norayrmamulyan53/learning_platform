@@ -49,23 +49,55 @@
             <section class="mini-div">
                 <div class="container">
                     <div class="row">
-                        {% for i in top_three_catg %}
+
                         <div class="col-md-4 mt-4">
                             <div class="mini-div-heading">
-                                <a href="{% url 'allcatpost' i.slug %}">
-                                    <span class="text">{{i.title|title}}
-                                        {% comment %} <br>
+                                <a href="/search/?search=data+science">
+                                    <span class="text">Դարձիր
+                                        <br>
                                         <b>
-                                        {{i.title|title}}
-                                        </b> {% endcomment %}
+                                            Data Scientist
+                                        </b>
                                     </span>
-                                    <span class="knowmoretxt">Know More
+                                    <span class="knowmoretxt">Ավելին
                <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </span>
                                 </a>
                             </div>
                         </div>
-                        {% endfor %}
+
+                        <div class="col-md-4 mt-4">
+                            <div class="mini-div-heading">
+                                <a href="/search/?search=data+analytics">
+                                    <span class="text">Դարձիր
+                                        <br>
+                                        <b>
+                                        Data Analytic
+                                        </b>
+                                    </span>
+                                    <span class="knowmoretxt">Ավելին
+               <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-4">
+                            <div class="mini-div-heading">
+                                <a href="/search/?search=django">
+                                    <span class="text">Դարձիր
+                                        <br>
+                                        <b>
+                                        Django Developer
+                                        </b>
+                                    </span>
+                                    <span class="knowmoretxt">Ավելին
+               <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
