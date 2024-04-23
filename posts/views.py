@@ -19,7 +19,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.views.decorators.csrf import csrf_exempt
 from edureka.settings import *
 import razorpay
-client = razorpay.Client(auth=(KEY_ID, KEY_SECRET))
 # Create your views here.
 
 def home(request):
@@ -181,7 +180,6 @@ def verify_payment(request):
         context = {}
         print(data)
         try:
-            client.utility.verify_payment_signature(data)
             razorpay_order_id = data['razorpay_order_id']
             razorpay_payment_id = data['razorpay_payment_id']
             order = Order.objects.get(order_id = razorpay_order_id)
@@ -379,12 +377,6 @@ def checkout(request):
                 "email": user.email,
                 "name": f'{user.first_name} {user.last_name}'
         }
-        orderss = client.order.create({
-        'amount':amount,
-        'currency':currency,
-        'receipt':receipt,
-        'notes':notes
-        })
 
         orders = Order.objects.filter(user=request.user, ordered=False)    
         order_payment = orders[0]

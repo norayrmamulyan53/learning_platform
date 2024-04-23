@@ -214,13 +214,6 @@ class approve_certForm(forms.ModelForm):
         model = Cart
         fields = ['certificate']
 
-class sendmessage(forms.ModelForm):
-
-    class Meta:
-        model = message
-        fields = '__all__'
-        exclude = ['wp']
-       
 class ribbonform(forms.ModelForm):
 
     class Meta:
