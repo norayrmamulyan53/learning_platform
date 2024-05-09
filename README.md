@@ -53,6 +53,12 @@ b) Custom Admin Panel
 
 and many other functionalities in this project...
 
+Install required env dependencies:
+```commandLine
+foo :$ pip install psycopg2-binary
+foo :$ sudo apt-get install libpq-dev python3-dev libjpeg-dev zlib1g-dev
+```
+
 Before running the project, run these commands, 
  1) pip install -r requirements.txt   
 
