@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 import time
 import os
-from edureka import settings
+from kursadaran import settings
 
 class Customer(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE)

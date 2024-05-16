@@ -17,7 +17,7 @@ import json
 from time import time
 from django.core.exceptions import ObjectDoesNotExist
 from django.views.decorators.csrf import csrf_exempt
-from edureka.settings import *
+from kursadaran.settings import *
 import razorpay
 # Create your views here.
 

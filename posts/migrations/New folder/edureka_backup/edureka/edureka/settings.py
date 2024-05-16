@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'edureka.urls'
+ROOT_URLCONF = 'kursadaran.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'edureka.wsgi.application'
+WSGI_APPLICATION = 'kursadaran.wsgi.application'
 
 
 # Database
