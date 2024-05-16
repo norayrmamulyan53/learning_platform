@@ -28,7 +28,7 @@ a) User Panel
 
 -> Purchase Courses
 -> Download Certificate after completing the course
--> Watch Videos
+-> Նայել Տեսահոլովակըs
 -> Edit Profile
 -> Change Password
 -> Order History

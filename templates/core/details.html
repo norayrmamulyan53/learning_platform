@@ -28,8 +28,8 @@
             <i class="fa fa-phone" aria-hidden="true"></i>
           </span>
           <div class="cnt_info">
-            <span class="text">Have Queries? Ask us</span>
-            <a href="#">08040423753</a>
+            <span class="text">Կա՞ն հարցեր</span>
+            <a href="#">374 202020</a>
           </div>
         </div>
       </div>
@@ -155,7 +155,7 @@
 <section class="container-flud clp_batch_table blue_gradient_background">
   <div class="container">
     <h2 class="title_box_heading mb-4">
-      Instructor-led AWS Architect live online classes
+      Ուսուցչի ղեկավարած AWS Architect-ի ուղիղ առցանց դասեր
     </h2>
     <div class="row sub_content_bx">
       <div class="col-md-9 no-padding box_heading_section">
@@ -182,7 +182,7 @@
                 </tr>
                 {% endfor %} {% comment %}
                 <tr>
-                  <th scope="row">DEC 07th</th>
+                  <th scope="row">Դեկտեմբեր 07</th>
                   <td>MON - FRI (15 DAYS)</td>
                   <td>Timings - 08:30 PM to 10:30 PM (IST)</td>
                 </tr>
@@ -204,30 +204,23 @@
       </div>
       <div class="col-md-3 no-padding">
         <div class="dtlpr_infbx">
-          <p>Course Price at</p>
+          <p>Դասընթացի արժեքը</p>
           <span class="final_pr"
-            ><i class="fa fa-inr" aria-hidden="true"></i>
+            ><i class="fa fa-dollar-sign" aria-hidden="true"></i>
             <a href="#"> {{posts.price}}</a>
           </span>
           <span class="cutdis_pr"
-            ><i class="fa fa-inr" aria-hidden="true"></i
+            ><i class="fa fa-dollar-sign" aria-hidden="true"></i
             >{{posts.old_price}}</span
           >
           <div class="disinf_bx">
-            <span>Discount: {{posts.discount}}%</span>
+            <span>Զեղչ {{posts.discount}}%</span>
           </div>
           <a
             href="{% url 'add' posts.slug %}"
             class="btn btn-secondary mt-2 mb-2"
-            >ENROLL NOW</a
+            >Գնել Հիմա</a
           >
-          <div class="emi_avail_txt">
-            <span>
-              <b>No Cost EMI</b> starts at<b
-                ><i class="fa fa-inr" aria-hidden="true"></i> </b
-              >{{posts.emi_start_price}} / month <a href="#">View more</a></span
-            >
-          </div>
         </div>
       </div>
     </div>
@@ -266,7 +259,7 @@
               </div>
               <div class="col-md-4">
                 <div class="main-mobile-video">
-                  <h4>Watch Video</h4>
+                  <h4>Նայել Տեսահոլովակը</h4>
                   <div class="video-radious">
                     <iframe
                       width="100%"
@@ -359,14 +352,14 @@
         class="col-lg-12 col-md-12 col-sm-6 col-xs-6 open_frm_bx loaded"
         style="background-image: url(images/download.jpg)"
       >
-        <div class="title">Like the curriculum? Enroll Now</div>
+        <div class="title">Գնել Հիմա</div>
         <div class="sub">
-          Structure your learning and get a certificate to prove it.
+          Կառուցեք ձեր ուսումը և ստացեք վկայագիր դա ապացուցելու համար:
         </div>
         <form>
           <div class="row">
             <div class="col-4">
-              <label for="formGroupExampleInput">Phone Number</label>
+              <label for="formGroupExampleInput">Հեռախոսահամար</label>
               <input
                 type="Number"
                 id="Number"
@@ -385,7 +378,7 @@
             </div>
             <div class="col-4 mt-2">
               <button type="submit" class="btn btn-primary mt-4">
-                ENROLL NOW
+                Գնել Հիմա
               </button>
             </div>
           </div>
@@ -465,7 +458,7 @@
       {% endfor %} {% if user.is_authenticated %}
       <div class="col-lg-12">
         <form method="post" action=".">
-          <h2>Add a Review</h2>
+          <h2>Թողնել կարծիք</h2>
           {% csrf_token %}
           <div class="mb-3">
             <label for="">Stars</label>
@@ -505,14 +498,14 @@
         class="col-lg-12 col-md-12 col-sm-6 col-xs-6 open_frm_bx loaded"
         style="background-image: url(images/download.jpg)"
       >
-        <div class="title">Loved reviews? Enroll Now</div>
+        <div class="title">Loved reviews? Գնել Հիմա</div>
         <div class="sub">
-          Structure your learning and get a certificate to prove it.
+          Կառուցեք ձեր ուսումը և ստացեք վկայագիր դա ապացուցելու համար:
         </div>
         <form>
           <div class="row">
             <div class="col-4">
-              <label for="formGroupExampleInput">Phone Number</label>
+              <label for="formGroupExampleInput">Հեռախոսահամար</label>
               <input
                 type="Number"
                 id="Number"
@@ -531,7 +524,7 @@
             </div>
             <div class="col-4 mt-2">
               <button type="submit" class="btn btn-primary mt-4">
-                ENROLL NOW
+                Գնել Հիմա
               </button>
             </div>
           </div>
@@ -630,14 +623,14 @@
         class="col-lg-12 col-md-12 col-sm-6 col-xs-6 open_frm_bx loaded"
         style="background-image: url(images/download.jpg)"
       >
-        <div class="title">Loved reviews? Enroll Now</div>
+        <div class="title">Loved reviews? Գնել Հիմա</div>
         <div class="sub">
-          Structure your learning and get a certificate to prove it.
+          Կառուցեք ձեր ուսումը և ստացեք վկայագիր դա ապացուցելու համար:
         </div>
         <form>
           <div class="row">
             <div class="col-4">
-              <label for="formGroupExampleInput">Phone Number</label>
+              <label for="formGroupExampleInput">Հեռախոսահամար</label>
               <input
                 type="Number"
                 id="Number"
@@ -656,7 +649,7 @@
             </div>
             <div class="col-4 mt-2">
               <button type="submit" class="btn btn-primary mt-4">
-                ENROLL NOW
+                Գնել Հիմա
               </button>
             </div>
           </div>
